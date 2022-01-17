@@ -7,21 +7,32 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 8px; /* right */
 }
 
 .title {
   background: #e3f4ff;
+  font-size: 18px; /* basically */
+  padding: 8px; /* right */
+  margin-top: 2px; /* should've been 0 and the margin-bottom 8px */
 }
 
 .content {
   background: #e3f4ff;
+  padding: 8px; /* should've been 16px 8px with a margin-bottom of 8px */
 }
 
 .button-container {
   background: #e3f4ff;
+  padding: 8px; /* right */
+  margin-top: 8px; /* this just shouldn't be */
+  text-align: center; /* right */
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block; /* right */
+  margin: 0 auto; /* right */
+  padding: 8px 20px; /* basically it */
 }
