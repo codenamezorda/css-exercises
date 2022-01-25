@@ -12,6 +12,9 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;  /* these three are alright but i should've added an 8px padding to everything */
+  align-items: center;
+  justify-content: space-between;
 }
 
 .profile-image {
@@ -19,7 +22,8 @@ body {
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
   border-radius: 50%;
   width: 48px;
-  height:  48px;
+  height: 48px;
+  margin: 10px; /* added this which in a way kind of gave the result the padding was supposed to */
 }
 
 .logo {
@@ -27,8 +31,8 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  padding-left: 10px; /* same thing as the comment above */
 }
-
 button {
   border: none;
   border-radius: 8px;
@@ -41,8 +45,20 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  padding-right: 10px; /* same as the two comments above */
 }
 
 ul {
   list-style-type: none;
+  display: flex; /* right, but I skipped on a couple other things */
+}
+.left {   /* should've put these last two together, oh my god */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
