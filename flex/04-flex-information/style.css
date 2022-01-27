@@ -1,5 +1,5 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace; /* should've put the text-align:center; in the body and not twice in different places */
 }
 
 img {
@@ -8,8 +8,10 @@ img {
 }
 
 .title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 900;
+  text-align: center;
+  margin-bottom: 32px; /* ok */
 }
 
 /* do not edit this footer */
@@ -23,4 +25,18 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+.container {  /* from here on I did something different than the solution but the result was the same */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.barberry, .chili, .pepper, .saffron { /* clearly, because they all follow the same styles, I should've made just one class */
+  display: flex;
+  flex-flow: column wrap; 
+  align-items: center; 
+  justify-content: center;
+  text-align: center; 
+  margin: 52px;
+  max-width: 200px;
 }
